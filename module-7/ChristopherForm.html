@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Christopher Villarreal
+  Module 7 Assignment 2 - PHP Forms
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Christopher Gaming Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Gaming Interests Form</h1>
+
+<form action="ChristopherResponse.php" method="post">
+
+  <!-- Field 1 -->
+  <p>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name">
+  </p>
+
+  <!-- Field 2 -->
+  <p>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age">
+  </p>
+
+  <!-- Field 3 -->
+  <p>
+    <label for="favoriteGame">Favorite Game:</label><br>
+    <input type="text" id="favoriteGame" name="favoriteGame">
+  </p>
+
+  <!-- Field 4 -->
+  <p>
+    <label for="platform">Favorite Gaming Platform:</label><br>
+
+    <select id="platform" name="platform">
+      <option value="">Select a Platform</option>
+      <option value="PC">PC</option>
+      <option value="PlayStation">PlayStation</option>
+      <option value="Xbox">Xbox</option>
+      <option value="Nintendo Switch">Nintendo Switch</option>
+      <option value="Mobile">Mobile</option>
+    </select>
+  </p>
+
+  <!-- Field 5 -->
+  <p>
+    Preferred Game Type:<br>
+
+    <input type="radio" id="singlePlayer" name="gameType" value="Single Player">
+    <label for="singlePlayer">Single Player</label>
+
+    <input type="radio" id="multiplayer" name="gameType" value="Multiplayer">
+    <label for="multiplayer">Multiplayer</label>
+
+    <input type="radio" id="both" name="gameType" value="Both">
+    <label for="both">Both</label>
+  </p>
+
+  <!-- Field 6 -->
+  <p>
+    Favorite Game Genres:<br>
+
+    <input type="checkbox" id="action" name="genres[]" value="Action">
+    <label for="action">Action</label>
+
+    <input type="checkbox" id="rpg" name="genres[]" value="RPG">
+    <label for="rpg">RPG</label>
+
+    <input type="checkbox" id="shooter" name="genres[]" value="Shooter">
+    <label for="shooter">Shooter</label>
+
+    <input type="checkbox" id="strategy" name="genres[]" value="Strategy">
+    <label for="strategy">Strategy</label>
+
+    <input type="checkbox" id="simulation" name="genres[]" value="Simulation">
+    <label for="simulation">Simulation</label>
+  </p>
+
+  <!-- Field 7 -->
+  <p>
+    <label for="reason">Why is your favorite game your favorite?</label><br>
+    <textarea id="reason" name="reason" rows="5" cols="40"></textarea>
+  </p>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
+</form>
+
+</body>
+
+</html>
