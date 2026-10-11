@@ -1,0 +1,100 @@
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+label { font-weight: bold; }
+
+.checkbox-group label { font-weight: normal; }
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+button[type='submit'] { background-color: #28a745; }
+button[type='reset'] { background-color: #dc3545; }
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.message {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #97e3aa;
+    border: 1px solid #28a745;
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.link-button {
+    background-color: #888888;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
